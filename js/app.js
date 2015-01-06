@@ -1,11 +1,23 @@
 (function(){
-	var app = angular.module('add_player', []);
+	var app = angular.module('fifa', ['view_player', 'add_player']);
 
-	app.controller('PlayerController', function() {
-		this.people = players;
+	/*app.controller('AddPlayerController', function(){
+		this.addition = {};
+
+		this.addRecord = function(person) {
+			player.records.push(this.record);
+		};
 	});
 
-	var players = [
+	app.controller('PlayerController', ['$http', function($http) {
+		var squad = this; 
+		squad.people = [];
+		$http.get('players.json').success(function(data){
+			squad.people = data;
+		});*/
+	  }]);
+
+	/*var players = [
 		{
 			fullname: 'Diego Costa',
 			shortname: 'Diego Costa',
@@ -26,7 +38,7 @@
 		}
 	]
 
-
+*/
 
 
 })();
